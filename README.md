@@ -13,7 +13,9 @@
 | **⑤ 腳位表** | PA5 (TIM2_CH1 PWM), PC13 (EXTI13 按鍵輸入), PA2/PA3 (USART2 TX/RX)。 |
 | **⑥ 驗收條件** | 1. 連按 B1 三次至 40m，耗氧增為 11%/s，LD2 快速變暗；2. O2<=20% 觸發 SOS 且 LD2 0.5 秒內快閃；3. 輸入 surface 進入 3 秒減壓呼吸燈，期滿補滿 O2。 |
 | **⑦ AI 揭露** | 專題故事與狀態機骨架由 AI 輔助；暫存器參數 (PSC=169, ARR=999, BRR=1476) 及 EXTI 寫 1 清除皆由人工查核對照手冊驗證。 |
+## 二、 專案檔案結構 (Project Structure)
 
+```text
 DeepSeaDiver/
 ├── Core/                        # 專案核心原始碼目錄
 │   ├── Inc/                     # 標頭檔目錄
